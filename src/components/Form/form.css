@@ -1,0 +1,79 @@
+.form-label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.form-input {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  width: 100%;
+  margin-top: 0.5rem;
+}
+
+.form-submit {
+  background-color: #007bff;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  margin-top: 1rem;
+  cursor: pointer;
+  margin-left: 80px;
+  position: relative;
+  bottom: 900px
+}
+.form-input-container {
+  display: block;
+  flex-direction: collums;
+  margin-left: 100px;
+  margin-right: 800px;
+  margin-top: 50px;
+  
+}
+
+.form-input-container label {
+  margin-bottom: 1rem;
+}
+
+.form-row {
+  display: block;
+  margin-bottom: 0.5rem;
+  display: flex;
+}
+
+.form-label-inline,
+.form-input-inline {
+    display: block;
+    margin-left: 40px;
+    margin-bottom: 30px;    
+
+}
+
+.form-label-inline {
+  margin-right: o.5rem;
+}
+
+.div-row {
+  background-color: #777;
+  width: 400px;
+  height: 900px;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  left:1200px;
+  bottom:900px
+}
+
+.checkboxes {
+  position: relative;
+  margin-left: 100px; 
+  margin-top: 50px; 
+}
+
+.checkboxes label {
+  display: block; 
+  margin-bottom: 5px; 
+}
