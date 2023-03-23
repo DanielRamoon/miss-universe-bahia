@@ -1,5 +1,5 @@
 import SliderHeader from "../../assets/slide-site.fw.png";
-import Logo from "../../assets/logo-header.fw.png";
+import Logo from "../../assets/logo.png";
 import "./header.css";
 
 function Header() {

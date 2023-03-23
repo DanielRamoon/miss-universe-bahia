@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import emailjs from "@emailjs/browser";
 import Foto01 from "../../assets/foto01.png";
 import "./form.css";
+import Footer from "../footer";
 
 function Form() {
   const [nome, setNome] = useState("");
@@ -108,7 +109,8 @@ function Form() {
   }
 
   return (
-    <form className="fomr" onSubmit={sendEmail}>
+    <div>
+ <form className="fomulario" onSubmit={sendEmail}>
       <div style={{ marginLeft: "100px" }}>
         <h2>inscrição</h2>
         <h3>Informações Gerais: </h3>
@@ -135,44 +137,51 @@ function Form() {
           />
         </label>
         <div className="form-row">
-          <label className="form-label-inline">Endereço:</label>
+        <label className="form-label">
+        Endereço:
           <input
-            className="form-input-inline"
+            className="form-input"
             type="text"
-            name="endereco"
+            name="nome"
             onChange={(e) => setEndereço(e.target.value)}
             value={endereço}
           />
+        </label>
 
-          <label className="form-label-inline">CEP:</label>
+        <label className="form-label"  style={{position: 'relative',marginLeft:'50px'}}>
+         CPF:
           <input
-            className="form-input-inline"
+            className="form-input"
             type="text"
-            name="cep"
-            onChange={(e) => setCep(e.target.value)}
-            value={cep}
+            name="nome"
+            onChange={(e) => setCpf(e.target.value)}
+            value={cpf}
+           
           />
+        </label>
         </div>
         <div className="form-row">
-          <label className="form-label-inline">Bairro:</label>
+        <label className="form-label">
+        Bairoo:
           <input
-            className="form-input-inline"
+            className="form-input"
             type="text"
-            name="endereco"
+            name="nome"
             onChange={(e) => setBairro(e.target.value)}
             value={bairo}
-            style={{ marginLeft: "60px" }}
           />
+        </label>
 
-          <label className="form-label-inline">Estado:</label>
+        <label className="form-label" style={{marginLeft:'70px'}}>
+        Estado:
           <input
-            className="form-input-inline"
+            className="form-input"
             type="text"
-            name="estado"
+            name="nome"
             onChange={(e) => setEstado(e.target.value)}
             value={estado}
-            style={{ right: "15px", position: "relative" }}
           />
+        </label>
         </div>
         <label className="form-label">
           Nome do pai:
@@ -195,44 +204,49 @@ function Form() {
           />
         </label>
         <div className="form-row">
-          <label className="form-label-inline">Telefone:</label>
+        <label className="form-label">
+        Telefone:
           <input
-            className="form-input-inline"
+            className="form-input"
             type="text"
-            name="telefone"
+            name="nome"
             onChange={(e) => setTel(e.target.value)}
             value={tel}
           />
-
-          <label className="form-label-inline">WhatsApp:</label>
+        </label>
+        <label className="form-label" style={{marginLeft:'50px'}}>
+        WhatsApp:
           <input
-            className="form-input-inline"
+            className="form-input"
             type="text"
-            name="whatsapp"
+            name="nome"
             onChange={(e) => setWpp(e.target.value)}
             value={wpp}
           />
+        </label>
         </div>{" "}
         <div className="form-row">
-          <label className="form-label-inline">E-mail:</label>
+        <label className="form-label">
+        E-mail:
           <input
-            className="form-input-inline"
+            className="form-input"
             type="text"
-            name="email"
+            name="nome"
             onChange={(e) => setEmail(e.target.value)}
             value={email}
-            style={{ marginLeft: "50px" }}
           />
+        </label>
 
-          <label className="form-label-inline">Instagram:</label>
+        <label className="form-label" style={{marginLeft:'65px'}}>
+        Instagram:
           <input
-            className="form-input-inline"
+            className="form-input"
             type="text"
-            name="instagram"
+            name="nome"
             onChange={(e) => setinsta(e.target.value)}
             value={insta}
-            style={{ left: "8 px", position: "relative" }}
           />
+        </label>
         </div>
         <div>
           <div>
@@ -240,22 +254,26 @@ function Form() {
           </div>
         </div>
         <div>
-          <label style={{ marginLeft: "20px" }}>CPF</label>
+        <label className="form-label">
+        CPF::
           <input
-            style={{ marginLeft: "20px" }}
+            className="form-input"
             type="text"
-            name="cpf"
+            name="nome"
             onChange={(e) => setCpf(e.target.value)}
             value={cpf}
           />
-          <label style={{ marginLeft: "20px" }}>RG</label>
+        </label>
+        <label className="form-label">
+        RG:
           <input
-            style={{ marginLeft: "20px" }}
+            className="form-input"
             type="text"
-            name="rg"
+            name="nome"
             onChange={(e) => setRg(e.target.value)}
             value={rg}
           />
+        </label>
         </div>
         <div>
           <p>Informações especifica:</p>
@@ -336,7 +354,10 @@ function Form() {
       <button className="form-submit" type="submit">
         Enviar
       </button>
+      <div><Footer/></div>
     </form>
+    </div>
+   
   );
 }
 
