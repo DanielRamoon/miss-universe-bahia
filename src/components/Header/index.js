@@ -1,5 +1,5 @@
 import SliderHeader from "../../assets/slide-site.fw.png";
-import Logo from "../../assets/logo.png";
+import Logo from "../../assets/logoo.png";
 import "./header.css";
 
 function Header() {
@@ -8,7 +8,8 @@ function Header() {
       <div className="div-container-header">
         <img src={SliderHeader}></img>
         <div className="nav">
-        <h1>MISS-UNIVERSE</h1>
+        <img style={{width:'300px',height:'50px', position:'absolute', top:'25px'}} src={Logo}></img>
+
           <ul>
             <li>
               <a href="#">Inicio</a>
