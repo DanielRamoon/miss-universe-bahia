@@ -75,10 +75,10 @@ function Form() {
 
     emailjs
       .send(
-        "service_b5rgbp1",
-        "template_hkf4cyl",
+        "service_9mmqqpl",
+        "template_1mcynp2",
         templateParams,
-        "VFKU74UYi2WOFJkVo"
+        "4m7Ccw9AXXV-HvDq7"
       )
 
       .then(
@@ -149,13 +149,13 @@ function Form() {
         </label>
 
         <label className="form-label"  style={{position: 'relative',marginLeft:'50px'}}>
-         CPF:
+         CEP:
           <input
             className="form-input"
             type="text"
             name="nome"
-            onChange={(e) => setCpf(e.target.value)}
-            value={cpf}
+            onChange={(e) => setCep(e.target.value)}
+            value={cep}
            
           />
         </label>
