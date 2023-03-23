@@ -347,10 +347,7 @@ function Form() {
         </label>
       </div>
 
-      <div className="div-row">
-        <img src={Foto01} alt="foto" />
-      </div>
-
+    
       <button className="form-submit" type="submit">
         Enviar
       </button>
